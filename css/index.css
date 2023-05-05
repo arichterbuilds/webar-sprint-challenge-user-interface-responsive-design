@@ -241,17 +241,30 @@ footer {
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+    .links{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+  
 
     /* gallery section */
     .gallery {
         height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
     }
     
     /* about us section */
 
     .about {
         height: 200vh;
+        margin: 0;
+        padding: 0;
     }
     
     .about h2 {
@@ -291,5 +304,21 @@ footer {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+    }
+}
+@media (max-width: 1280px){
+    .links{
+       font-size: 9rem;
+    }
+    .header{
+        width: 100%;
+    }
+}
+@media (max-width: 1024px){
+    .links{
+       font-size: 9rem;
+    }
+    .header{
+        width: 100%;
     }
 }
